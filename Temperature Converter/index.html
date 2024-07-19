@@ -13,13 +13,21 @@
         <h1>Temperature Converter</h1>
         <div class="converter">
             <input type="number" id="temperature" placeholder="Enter temperature">
-            <select id="type">
+            <select id="fromType">
                 <option value="celsius">Celsius</option>
                 <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <select id="toType">
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="celsius">Celsius</option>
+                <option value="kelvin">Kelvin</option>
             </select>
             <button onclick="convertTemperature()">Convert</button>
         </div>
-        <div class="screen" id="result">0.00</div>
+        <div class="screen">
+            <div id="result">0.00</div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
